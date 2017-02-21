@@ -17,7 +17,8 @@
   :profiles
   {:dev
    {:dependencies [[binaryage/devtools "0.8.2"]
-                   [figwheel-sidecar "0.5.0"]]
+                   [figwheel-sidecar "0.5.0"]
+                   [org.clojure/test.check "0.9.0"]]
 
     ;; :plugins      [[lein-figwheel "0.5.7"]]
     }}
