@@ -18,24 +18,14 @@
              {:key :weeks-off
               :type "text"
               :label "Weeks off"}
-             {:key :health-ins-diff
+             {:key :employed-ins-rate
               :type "text"
-              :label "Monthly health insurance diff"}
-             {:key :low-hourly-wage
-              :type "range"
-              :label "Minimum hourly wage"}
-             {:key :high-hourly-wage
-              :type "range"
-              :label "Maximum hourly wage"}])
+              :label "Employed insurance rate"}
+             {:key :open-market-ins-rate
+              :type "text"
+              :label "Open market insurance rate"}])
 
 
-
-(def default-db
-  {:db {:hours-per-week       30
-        :weeks-off            10
-        :employed-ins-rate    200
-        :open-market-ins-rate 500
-        :hourly-wage-range    [45 105]}})
 
 
 (defn dollar-str
@@ -45,6 +35,8 @@
         (.format (goog.i18n.NumberFormat.
                    (.-CURRENCY goog.i18n.NumberFormat.Format)) n)]
     (subs with-decimal 0 (- (count with-decimal) 3))))
+
+
 
 (defn row [{:keys [hourly-wage
                    hours-per-week
@@ -68,7 +60,6 @@
                           employed-ins-rate
                           open-market-ins-rate
                           hourly-wage-range] :as db}]
-  (prn db)
   (let [[min max] hourly-wage-range
         health-ins-diff (- open-market-ins-rate employed-ins-rate)]
     [:table.main-table
@@ -88,12 +79,32 @@
              wage-range))]]))
 
 
+(defn input-row [{:keys [val label type key]}]
+  (let [label-text (str label (when (= type "range") (str ": " val)))]
+    [:div.input-row
+     [:label label-text]
+     [:input {:value     val
+              :type      type
+              :min       0
+              :max       max-hourly-wage
+              :step      5
+              :title     val
+              :on-change #(re-frame/dispatch [:input-stuff key (-> % .-target .-value)])}]]))
+
+
 
 (defn main-panel []
-  (let [name (re-frame/subscribe [:name])]
+  (let [stuff (re-frame/subscribe [:get-the-stuff])]
+    (prn "stuff" @stuff)
     (fn []
       [:div.page
-       (main-table (:db default-db))])))
+       (main-table @stuff)
+       (map (fn [{:keys [key type label]}]
+              (input-row {:val (get @stuff key)
+                          :label label
+                          :type type
+                          :key key}))
+            inputs)])))
 
 
 

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9ac8e9-e6a7-4a06-819d-64b609cc67e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_test_check_0_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freelance-calculator.iml" afterPath="$PROJECT_DIR$/freelance-calculator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/index.html" afterPath="$PROJECT_DIR$/resources/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cljs/freelance_calculator/db.cljs" afterPath="$PROJECT_DIR$/src/cljs/freelance_calculator/db.cljs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cljs/freelance_calculator/events.cljs" afterPath="$PROJECT_DIR$/src/cljs/freelance_calculator/events.cljs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cljs/freelance_calculator/subs.cljs" afterPath="$PROJECT_DIR$/src/cljs/freelance_calculator/subs.cljs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cljs/freelance_calculator/views.cljs" afterPath="$PROJECT_DIR$/src/cljs/freelance_calculator/views.cljs" />
     </list>
     <ignored path="freelance-calculator.iws" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="db.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/db.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="726">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -63,8 +59,8 @@
       <file leaf-file-name="views.cljs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/views.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+            <state relative-caret-position="484">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -93,8 +89,18 @@
       <file leaf-file-name="core.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/core.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="55" selection-start-line="16" selection-start-column="2" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="440">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/events.cljs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -103,8 +109,8 @@
       <file leaf-file-name="subs.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/subs.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="176">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -130,9 +136,11 @@
       <list>
         <option value="$PROJECT_DIR$/script/repl.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/src/cljs/freelance_calculator/db.cljs" />
         <option value="$PROJECT_DIR$/resources/public/main.css" />
         <option value="$PROJECT_DIR$/resources/public/index.html" />
+        <option value="$PROJECT_DIR$/src/cljs/freelance_calculator/db.cljs" />
+        <option value="$PROJECT_DIR$/src/cljs/freelance_calculator/events.cljs" />
+        <option value="$PROJECT_DIR$/src/cljs/freelance_calculator/subs.cljs" />
         <option value="$PROJECT_DIR$/src/cljs/freelance_calculator/views.cljs" />
       </list>
     </option>
@@ -269,7 +277,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
-  <component name="ReplState" timestamp="1487641083731">{:repl-history {:ide [], :local [&quot;(+ 7 8)&quot; &quot;(+ 3 4)&quot; &quot;(+ 9 8)&quot; &quot;(require '[cljs.spec :as spec])&quot; &quot;(use 'clojure.string)&quot; &quot;(require '[cljs.pprint :refer [pprint]])&quot; &quot;(pprint {:a 5})&quot; &quot;(println {:a 5})&quot; &quot;(spec/valid? int? 9)&quot; &quot;(spec/valid? even? 9)&quot; &quot;(spec/def :cljs.user/even-but-not-big? (spec/and even? #(&lt; % 10)))&quot; &quot;(s/valid? ::even-but-not-big? 11)&quot; &quot;(spec/valid? ::even-but-not-big? 11)&quot; &quot;(spec/valid? ::even-but-not-big? 10)&quot; &quot;(spec/valid? ::even-but-not-big? 8)&quot; &quot;(spec/valid? ::even-but-not-big? 5)&quot; &quot;(spec/explain ::even-but-not-big? 5)&quot; &quot;(spec/explain ::even-but-not-big? 12)&quot; &quot;(spec/def ::arg-list (spec/cat :name string? :age int?))&quot; &quot;(spec/valid? ::arg-list \n             [\&quot;Richard\&quot; 47])&quot; &quot;(spec/valid? ::arg-list \n             [\&quot;Richard\&quot; :47])&quot; &quot;(spec/conform ::arg-list [\&quot;Richard\&quot; :47])&quot; &quot;(spec/conform ::arg-list [\&quot;Richard\&quot; 47])&quot; &quot;(spec/def ::input (spec/or :parsed int? :unparsed string?))&quot; &quot;(spec/conform ::input 7)&quot; &quot;(spec/conform ::input \&quot;srtsrt\&quot;)&quot; &quot;(spec/conform ::input :rst)&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1487643360130">{:repl-history {:ide [], :local [&quot;(+ 7 8)&quot; &quot;(+ 3 4)&quot; &quot;(+ 9 8)&quot; &quot;(require '[cljs.spec :as spec])&quot; &quot;(use 'clojure.string)&quot; &quot;(require '[cljs.pprint :refer [pprint]])&quot; &quot;(pprint {:a 5})&quot; &quot;(println {:a 5})&quot; &quot;(spec/valid? int? 9)&quot; &quot;(spec/valid? even? 9)&quot; &quot;(spec/def :cljs.user/even-but-not-big? (spec/and even? #(&lt; % 10)))&quot; &quot;(s/valid? ::even-but-not-big? 11)&quot; &quot;(spec/valid? ::even-but-not-big? 11)&quot; &quot;(spec/valid? ::even-but-not-big? 10)&quot; &quot;(spec/valid? ::even-but-not-big? 8)&quot; &quot;(spec/valid? ::even-but-not-big? 5)&quot; &quot;(spec/explain ::even-but-not-big? 5)&quot; &quot;(spec/explain ::even-but-not-big? 12)&quot; &quot;(spec/def ::arg-list (spec/cat :name string? :age int?))&quot; &quot;(spec/valid? ::arg-list \n             [\&quot;Richard\&quot; 47])&quot; &quot;(spec/valid? ::arg-list \n             [\&quot;Richard\&quot; :47])&quot; &quot;(spec/conform ::arg-list [\&quot;Richard\&quot; :47])&quot; &quot;(spec/conform ::arg-list [\&quot;Richard\&quot; 47])&quot; &quot;(spec/def ::input (spec/or :parsed int? :unparsed string?))&quot; &quot;(spec/conform ::input 7)&quot; &quot;(spec/conform ::input \&quot;srtsrt\&quot;)&quot; &quot;(spec/conform ::input :rst)&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.cljs-repl">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -539,13 +547,13 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24156627" sideWeight="0.51348317" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14337349" sideWeight="0.51348317" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326268" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.48651686" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16807228" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17048194" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -604,22 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/subs.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/core.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="55" selection-start-line="16" selection-start-column="2" selection-end-line="17" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
@@ -636,18 +628,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/events.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/db.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="726">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/subs.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cljs/freelance_calculator/views.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        <state relative-caret-position="484">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding />
         </state>
       </provider>

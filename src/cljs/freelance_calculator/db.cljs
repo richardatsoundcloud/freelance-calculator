@@ -19,18 +19,20 @@
                                   (fn [{:keys [min max]}]
                                     (<= min max 200))))
 
-(s/def ::db (s/keys :req-un [::hours-per-week
-                             ::weeks-off
-                             ::insurance-rate
-                             ::employed-ins-rate
-                             ::open-market-ins-rate
-                             ::hourly-wage-range]))
+(s/def ::data (s/keys :req-un [::hours-per-week
+                               ::weeks-off
+                               ::insurance-rate
+                               ::employed-ins-rate
+                               ::open-market-ins-rate
+                               ::hourly-wage-range]))
 
 (def default-db
-  {:db {:hours-per-week 30
-        :weeks-off 10
-        :employed-ins-rate 200
-        :open-market-ins-rate 500
-        :hourly-wage-range [45 105]}})
+  {:data {:hours-per-week 30
+          :weeks-off 10
+          :employed-ins-rate 200
+          :open-market-ins-rate 500
+          :hourly-wage-range [45 105]}})
+
+
 
 
